@@ -1,0 +1,13 @@
+{
+    "colors": {
+      "h1": "#28a745",    // Change couleur du texte des h1 en vert
+      "p": "#333333",     // Change la couleur du texte des paragraphes
+      "a": "#ff5733",     // Change couleur des liens
+      "background": "#ffffff"  // Change la couleur de fond de la page
+    },
+    "styles": {
+      "h1_font_size": "40px",  // Change la taille de la police des h1
+      "p_font_size": "20px",   // Change la taille de la police des p
+      "a_text_decoration": "none"  // Retire la décoration des liens
+    }
+  }

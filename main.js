@@ -23,3 +23,24 @@ window.addEventListener('scroll', handleScroll);
     }, 100); // Attendre 100 ms avant d'afficher la navbar 
 };
 
+
+// Sélectionnez toutes les cartes
+const cards = document.querySelectorAll('.cartes');
+
+function handleScroll() {
+  // Parcourez toutes les cartes
+  cards.forEach(cartes => {
+    // Vérifiez si la carte est dans la fenêtre de visualisation
+    const rect = cartes.getBoundingClientRect();
+    if (rect.top >= 0 && rect.top <= window.innerHeight) {
+      // Ajoutez la classe "visible" lorsque la carte est visible
+      cartes.classList.add('visible2');
+    }
+  });
+}
+
+// Ajoutez un écouteur d'événement pour le scroll
+window.addEventListener('scroll', handleScroll);
+
+// Exécutez la fonction immédiatement pour détecter les cartes visibles dès le chargement
+handleScroll();

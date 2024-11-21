@@ -92,21 +92,32 @@ section{
 
 }
 
-.carte{
+.carteMere{
 
     color: white;
     display: flex;
-    justify-content: space-evenly;
+    justify-content:space-evenly;
 
 
 }
 
-.carte>p{
+.cartes{
     margin: 1%;
-    border: 1px solid white;
-    width: 500px;
+    border: 1px solid rgb(255, 0, 0);
+    width: 80%;
     height: 500px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(255, 2, 2, 0.1);
+    opacity: 0;  /* Rendre les cartes invisibles au départ */
+    transform: translateY(100px);  /* Déplace les cartes du bas */
+    transition: all 3s ease-out;  /* Transition fluide pour l'apparition */
 }
+
+.cartes.visible2 {
+    opacity: 1;
+    transform: translateY(0);  /* Remet les cartes en position normale */
+  }
 
 .blocTitre{
     position: absolute;
@@ -218,4 +229,14 @@ section{
 @keyframes animate2 {
     99%{transform: translate(0);}
     100%{transform: translate(0); opacity: 1;}
+}
+
+.blocEnfant {
+    width: 30%;
+    height: 30%;
+    border: 1px solid red;
+}
+
+.cartesEnfant{
+     
 }
