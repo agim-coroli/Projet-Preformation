@@ -23,36 +23,52 @@ nav{
     transition: top 1s ease, background-color 1s ease; /* Animation pour le déplacement et la couleur de fond */
     left: 0;
     right: 0;
-    background-color: #04052E;
+    background-color: #f5f5f5;
     background-color: transparent; /* Couleur de fond initiale */
     z-index: 1; /* Assurez-vous que la navbar est au-dessus du contenu */
-
+    background-color: #211d1d;
 }
 
 
 .navbar.visible{
     top: 0;
-    background-color: #04052E;
     justify-content: space-evenly;
     position: fixed;
+    
 }
-
 
 .list_puce_nav{
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: space-evenly;
     align-items: center;
     height: 60px;
     width: 2000px;
+    /* border: 1px solid green; */
     transition: color 0.5s ease; /* Transition pour le changement de couleur */
+}
 
+.Ex{
+    flex-grow: 0.79;
+    height: 50px;
+}
+
+.search{
+    width: 300px;
 }
 
 .list_puce_nav>li{
     margin: 0;
     padding: 0;
+    /* border: 1px solid red; */
+}
+
+.txt{
+    flex-grow: 0.05;
+}
+
+.logo>a{
+    margin-left: 10%;
 }
 
 .list_puce_nav>li>a{
@@ -60,15 +76,24 @@ nav{
     color: snow;
     font-size: 30px;
     transition: color 0.5s ease; /* Transition pour le changement de couleur */
-    font-family: snowLink;
+    font-family:snowLink, sans-serif ;
+    letter-spacing: 2px;
+}
+.lien:hover{
+    /* transition: margin-right 3s; */
+    border-bottom: 2px solid #ffffff;
+}
 
+.flexible{
+    display: flex;
+    letter-spacing: 5px;
 
 }
 
-.list_puce_nav>li:nth-child(1){
-    background-color:  #4a4545 ;
+.flexible>label>i{
+    color: snow;
+    font-size: 20px;
     
-
 }
 
 .list_puce_nav>li>a::after{
@@ -90,17 +115,37 @@ nav{
 
 .blocSection{
     position: absolute;
-    top: 7.5%;
-    color: green;
+    top: 25%;
     display: flex;
-    height: 100%;
+    flex-direction: row;
+}
+.blocSection2{
+    position: absolute;
+    top: 72%;
+    display: flex;
+    flex-direction: row;
+}
+.blocSection3{
+    position: absolute;
+    top: 119%;
+    display: flex;
+    flex-direction: row;
+}
+
+.blocSection4{
+    position: absolute;
+    top: 166%;
+    display: flex;
+    flex-direction: row;
 }
 
 .sectionG{
     border: 3px solid red;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     width: 50%;
+    overflow: hidden;
 }
 
 .sectionD{
@@ -109,19 +154,50 @@ nav{
     flex-direction: column;
     align-items: end;
     width: 50%;
+    overflow: hidden;
+    position: absolute;
+    top: 100%;
+    right: 0;
 }
 
 .filsG{
-    border: 3px solid rgb(255, 0, 166);
-    width: 40%;
-    height: 800px;
+    /* border: 3px solid rgb(255, 0, 166); */
+    width: 45%;
+    height: 200px;
+    margin-left: -50%;
+    overflow: hidden;
+    background-color: #fff;
+    animation: moveRightL 3s linear forwards; 
 }
 
 .filsD{
-    border: 3px solid rgb(255, 0, 166);
-    width: 40%;
-    height: 800px;
+    /* border: 3px solid rgb(255, 0, 166); */
+    width: 45%;
+    height: 200px;
+    margin-right: -50%;
+    overflow: hidden;
+    background-color: #fff;
+    animation: moveRightR 3s linear forwards;
+}
 
+@keyframes moveRightL {
+    0% {
+        transform: translateX(0); 
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(52vw); 
+    }
+}
+
+@keyframes moveRightR {
+    0% {
+        transform: translateX(20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(-52vw); 
+    }
 }
 
 /* pied de page  */
@@ -134,11 +210,9 @@ footer{
 }
 
 .pied{
-    /* border: 1px solid rgb(255, 0, 238); */
     display: flex;
     justify-content: space-between;
     padding: 1%;
-    /* max-height: 10px; a definir plutard */
 }
 
 /* premier bloc footer  */

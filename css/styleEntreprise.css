@@ -21,36 +21,52 @@ nav{
     transition: top 1s ease, background-color 1s ease; /* Animation pour le déplacement et la couleur de fond */
     left: 0;
     right: 0;
-    background-color: #04052E;
+    background-color: #f5f5f5;
     background-color: transparent; /* Couleur de fond initiale */
     z-index: 1; /* Assurez-vous que la navbar est au-dessus du contenu */
-
+    background-color: #211d1d;
 }
 
 
 .navbar.visible{
     top: 0;
-    background-color: #04052E;
     justify-content: space-evenly;
     position: fixed;
+    
 }
-
 
 .list_puce_nav{
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: space-evenly;
     align-items: center;
     height: 60px;
     width: 2000px;
+    /* border: 1px solid green; */
     transition: color 0.5s ease; /* Transition pour le changement de couleur */
+}
 
+.Ex{
+    flex-grow: 0.79;
+    height: 50px;
+}
+
+.search{
+    width: 300px;
 }
 
 .list_puce_nav>li{
     margin: 0;
     padding: 0;
+    /* border: 1px solid red; */
+}
+
+.txt{
+    flex-grow: 0.05;
+}
+
+.logo>a{
+    margin-left: 10%;
 }
 
 .list_puce_nav>li>a{
@@ -58,15 +74,24 @@ nav{
     color: snow;
     font-size: 30px;
     transition: color 0.5s ease; /* Transition pour le changement de couleur */
-    font-family: snowLink;
+    font-family:snowLink, sans-serif ;
+    letter-spacing: 2px;
+}
+.lien:hover{
+    /* transition: margin-right 3s; */
+    border-bottom: 2px solid #ffffff;
+}
 
+.flexible{
+    display: flex;
+    letter-spacing: 5px;
 
 }
 
-.list_puce_nav>li:nth-child(1){
-    background-color:  #4a4545 ;
+.flexible>label>i{
+    color: snow;
+    font-size: 20px;
     
-
 }
 
 .list_puce_nav>li>a::after{
