@@ -6,7 +6,7 @@
 }
 @font-face {
     font-family: 'snowLink';
-    src: url(../fonts/f24q3231-snow-freeze/otf/f24q3231-snow-freeze-snow-freeze-regular-400.otf);
+    src: url(fonts/f24q3231-snow-freeze/otf/f24q3231-snow-freeze-snow-freeze-regular-400.otf);
 }
 
 body{
@@ -91,7 +91,6 @@ nav{
     letter-spacing: 2px;
 }
 .lien:hover{
-    /* transition: margin-right 3s; */
     border-bottom: 2px solid #ffffff;
 }
 
