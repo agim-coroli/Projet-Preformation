@@ -29,8 +29,8 @@ nav{
     transition: top 1s ease, background-color 1s ease; /* Animation pour le déplacement et la couleur de fond */
     left: 0;
     right: 0;
-    background-color: transparent; /* Couleur de fond initiale */
-    z-index: 1; /* Assurez-vous que la navbar est au-dessus du contenu */
+    background-color: transparent;
+    z-index: 1;
     background-color: #00000089;
 }
 
@@ -57,7 +57,6 @@ nav{
     align-items: center;
     height: 40px;
     width: 2000px;
-    /* border: 1px solid green; */
     transition: color 0.5s ease; /* Transition pour le changement de couleur */
 }
 
@@ -73,7 +72,6 @@ nav{
 .list_puce_nav>li{
     margin: 0;
     padding: 0;
-    /* border: 1px solid red; */
 }
 
 .txt{
@@ -93,7 +91,6 @@ nav{
     letter-spacing: 2px;
 }
 .lien:hover{
-    /* transition: margin-right 3s; */
     border-bottom: 2px solid #ffffff;
 }
 
@@ -103,7 +100,7 @@ nav{
 
 }
 
-.flexible>label>i{
+.flexible>i{
     color: snow;
     font-size: 20px;
     
@@ -114,9 +111,9 @@ nav{
 }
 
 .lien {
-    position: relative; /* Nécessaire pour positionner l'élément ::after */
-    display: inline-block; /* Permet à l'élément de s'ajuster à son contenu */
-    color: white; /* Couleur du texte, changez si nécessaire */
+    position: relative;
+    display: inline-block;
+    color: white;
 }
 
 .txt>.lien{
@@ -127,6 +124,10 @@ nav{
     border-bottom: 2px solid #ffffff;
     transition: width 0.4s ease, left 0.4s ease;
 }
+
+
+
+
 
 /* contenu section  */
 
@@ -234,12 +235,20 @@ input, label{
     position: absolute;
 }
 
+
+.textJ>p{
+    font-size: 22px;
+    font-family: interview,sans-serif;
+}
+
 .textJ2{
     display: flex;
     justify-content: center;
     align-items: center;
     perspective: 1000px; /* Ajoute de la profondeur pour le retournement */
+    font-family: interview, sans-serif;
 }
+
 
 .container {
     perspective: 1000px; /* Ajoute de la profondeur pour le retournement */
@@ -251,19 +260,21 @@ input[type="checkbox"] {
 .button {
     font-family:interview, sans-serif ;
     font-size: 19px;
-    line-height: 50px;
     width: 250px;
     height: 50px;
-    /* display: inline-block; */
     cursor: pointer;
     background-color: #007BFF;
     color: white;
     border-radius: 5px;
-    /* text-align: center; */
-    /* position: relative; */
     transition: transform 0.6s;
     transform-style: preserve-3d; /* Préserve la 3D des enfants */
 }
+
+.button:hover{
+    background-color: #2980b9; /* Couleur du bouton au survol */
+    transform: scale(1.05); /* Légère augmentation de taille au survol */
+}
+
 input[type="checkbox"]:checked + .button {
     transform: rotateY(180deg); /* Retourne le bouton */
     
@@ -272,31 +283,104 @@ input[type="checkbox"]:checked + .button {
 .front {
     background-color: #007BFF; /* Couleur de la face avant */
     width: 220%;
-    height: 100%;
+    padding:5%;
     position: absolute;
-    left: -50px;
+    left: -20px;
+    top:-50%;
     backface-visibility: hidden; /* Cache le verso lorsqu'il est retourné */
     border-radius: 5px;
+    line-height: 40px;
+    font-size: 25px;
 }
-.back {
-    background-color: #28A745; /* Couleur de la face arrière */
+
+.colone{
+display: flex;
+flex-direction: column;
+
+}
+
+.colone>p{
+    font-size: 25px;
+    text-align: left;
+    margin: -40px;
+}
+
+.deuxPoint{
+    text-align: left;
+}
+
+.deuxPoint strong{
+    color: #000000ac;
+}
+
+
+
+.back{
+    background-color: rgb(76, 76, 76); 
     transform: rotateY(180deg); /* Retourne la face arrière */
-    color: white; /* Couleur du texte sur le dos */
-    width: 1000px;
+    color: white;
+    width: 1315px;
+    height: 500px;
     position: absolute;
-    top: -170px;
-    left: -195%;
+    top: -418%;
+    left: -268%;
     backface-visibility: hidden; /* Cache le verso lorsqu'il est retourné */
     border-radius: 30px;
-
-}
-
-.back>ul{
     display: flex;
-    flex-direction: row;
+    align-items: center;
+    text-align:center;
+    justify-content: center;
+    padding: 10%;
+    font-size: 25px;
 }
 
-.back>ul>li{
+.back p{
+    padding: 5%;
+    width: 100%;
+}
+
+.borderMiddle{
+    border-left: 1px solid rgba(0, 0, 0, 0.379);
+    border-right: 1px solid rgba(0, 0, 0, 0.379);
+}
+
+.parcours>p{
+    font-size: 25px;
+}
+
+.petitTxt{
+
+    font-size: 21px;
+}
+
+.puce{
+    display: flex;
+
+}
+
+.puceNoir{
+    
+    margin: 5%;
+    font-size: 30px;
+    color: snow;
+}
+
+ol>p{
+    color: #000000ac;
+    text-decoration: underline;
+}
+
+.puce>:nth-child(1){
+    border-right: 1px solid rgba(0, 0, 0, 0.379); 
+    padding: 2%; 
+    padding-right: 10%;
+}
+
+.puce li{
+
+    text-align: left;
+    margin-bottom: 10px;
+    text-decoration: none;
 }
 
 /* --------------------------------------- */
@@ -311,11 +395,11 @@ footer{
 }
 
 .pied{
-    /* border: 1px solid rgb(255, 0, 238); */
+
     display: flex;
     justify-content: space-between;
     padding: 1%;
-    /* max-height: 10px; a definir plutard */
+
 }
 
 /* premier bloc footer  */

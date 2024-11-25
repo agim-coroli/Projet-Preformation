@@ -20,7 +20,7 @@ video {
     top: 0;
     left: 0;
     width: 100%;   /* Prend toute la largeur de la fenêtre */
-    height: 870px;  /* Prend toute la hauteur de la fenêtre */
+    height: 100vh;  /* Prend toute la hauteur de la fenêtre */
     object-fit: cover; /* Remplir l'espace sans déformation */
     z-index: -1;    /* Place la vidéo derrière tout autre contenu */
     opacity: 50%;
@@ -241,7 +241,7 @@ section{
     color: white;
     display: flex;
     justify-content:space-evenly;
-    height: 670px;
+    height: 80vh;
     scroll-margin: 0;
 }
 
