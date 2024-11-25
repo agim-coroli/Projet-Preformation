@@ -28,8 +28,8 @@ nav{
     transition: top 1s ease, background-color 1s ease; /* Animation pour le déplacement et la couleur de fond */
     left: 0;
     right: 0;
-    background-color: transparent; /* Couleur de fond initiale */
-    z-index: 1; /* Assurez-vous que la navbar est au-dessus du contenu */
+    background-color: transparent;
+    z-index: 1; 
     background-color: rgba(0, 0, 0, 0);
 }
 

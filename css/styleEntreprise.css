@@ -36,7 +36,7 @@ nav{
 
 .titre{
     position: absolute;
-    top: 33%;
+    top: 34%;
     left: 20%;
     font-family: interview;
     font-size: 130px;
@@ -61,7 +61,7 @@ nav{
 }
 
 .Ex{
-    flex-grow: 0.79;
+    flex-grow: 0.74;
     height: 50px;
 }
 
