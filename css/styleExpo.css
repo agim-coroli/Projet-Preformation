@@ -21,8 +21,7 @@ body{
     background-color: black;
 }
 
-/* navbar debut  */
-
+/* param navbar  */
 nav{
     top: -100px;
     transition: top 1s ease, background-color 1s ease; /* Animation pour le déplacement et la couleur de fond */
@@ -32,16 +31,12 @@ nav{
     z-index: 1; 
     background-color: rgba(0, 0, 0, 0);
 }
-
-
-
 .navbar.visible{
     top: 0;
     justify-content: space-evenly;
     position: fixed;
 
 }
-
 .list_puce_nav{
     margin: 0;
     padding: 0;
@@ -50,33 +45,25 @@ nav{
     height: 40px;
     width: 2000px;
     list-style-type: none;
-    /* border: 1px solid green; */
     transition: color 0.5s ease; /* Transition pour le changement de couleur */
 }
-
 .Ex{
     flex-grow: 0.79;
     height: 50px;
 }
-
 .search{
     width: 300px;
 }
-
 .list_puce_nav>li{
     margin: 0;
     padding: 0;
-    /* border: 1px solid red; */
 }
-
 .txt{
     flex-grow: 0.05;
 }
-
 .logo>a{
     margin-left: 10%;
 }
-
 .list_puce_nav>li>a{
     text-decoration: none;
     color: rgb(255, 255, 255);
@@ -85,55 +72,44 @@ nav{
     font-family:snowLink, sans-serif ;
     letter-spacing: 2px;
 }
-
 .lien:hover{
-    /* transition: margin-right 3s; */
     border-bottom: 2px solid #ffffff;
 }
-
 .flexible{
     display: flex;
     letter-spacing: 5px;
 }
-
 .flexible>label>i{
     color: snow;
     font-size: 20px;
-    
 }
-
 .flexible>label>input{
     background-color: snow;
     font-size: 20px;
-    
 }
-
 .list_puce_nav>li>a::after{
     border: 1px solid black;
 }
-
 .lien {
     position: relative; /* Nécessaire pour positionner l'élément ::after */
     display: inline-block; /* Permet à l'élément de s'ajuster à son contenu */
-    color: white; /* Couleur du texte, changez si nécessaire */
+    color: white;
 }
-
 .txt>.lien{
     font-size: 140%;
 }
-
 .lien:hover{
     border-bottom: 2px solid #ffffff;
     transition: width 0.4s ease, left 0.4s ease;
 }
-
 input{
     background-color: rgba(0, 0, 0, 0.559);
     color: snow;
 }
 
-/* Section  */
+/* Section ------------------------------------------------------------ */
 
+/* param section  */
 .carteTrans{
     border: 1px solide rgb(0, 255, 0);
     position: absolute;
@@ -151,40 +127,34 @@ input{
     align-items: center;
     color: white;
 }
-
 .lesCartes{
     display: flex;
     justify-content: center;
     align-items: center;
 
 }
-
 .card {
     perspective: 1000px; /* Perspective pour la rotation 3D */
     margin-top: 15px;
     background-color: transparent;
     font-family: carteDefil;
     font-size: 18px;
-
-
 }
-
 .cardInter{
     position: relative;
     top: 50%;
     width: 500px;
-    height: 250px; /* Hauteur de la carte */
+    height: 250px;
     transition: transform 0.6s; /* Transition pour la rotation */
     transform-style: preserve-3d; /* Préserve les transformations 3D */
     color: white;
 }
-
 .button{
     position: absolute;
     top: 3%;
     z-index: 10;
-    background-color: #3498db; /* Couleur du bouton */
-    color: white; /* Couleur du texte du bouton */
+    background-color: #3498db; 
+    color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -192,12 +162,10 @@ input{
     padding: 10px 20px;
     margin: 20px 0;
 }
-
 .button:hover {
-    background-color: #2980b9; /* Couleur du bouton au survol */
+    background-color: #2980b9;
     transform: scale(1.05); /* Légère augmentation de taille au survol */
 }
-
 .cardAvant{
     position: absolute;
     backface-visibility: hidden; /* Cacher l'arrière de la carte */
@@ -206,13 +174,11 @@ input{
     align-items: center;
     width: 500px;
     height: 250px; 
-
 }
-
 .cardBack{
     position: absolute;
     backface-visibility: hidden;
-    border: 1px solid #ccc; /* Bordure de la carte */
+    border: 1px solid #ccc;
     border-radius: 30px;
     transform: rotateY(180deg); /* Met le verso à l'envers */
     box-shadow: 0 0 1em rgb(255, 255, 255);
@@ -254,7 +220,9 @@ input{
     margin: 5%;
 }
 
-/* pied de page  */
+/* pied de page  --------------------------------------------------------------------*/
+
+/* param footer  */
 footer{
     height: 200px;
     width: 100%;
@@ -304,8 +272,6 @@ footer{
 }
 
 .listPuceFooter{
-
-    /* border: 1px solid rgb(0, 38, 255); */
     display: flex;
     flex-direction: column;
     align-items: center;

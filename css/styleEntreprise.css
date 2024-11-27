@@ -1,3 +1,4 @@
+/* Police ecriture  */
 @font-face{
     font-family: 'snowPolice';
     src: url(../fonts/f24q3231-snow-freeze/otf/f24q3231-snow-freeze-snow-freeze-regular-snow-pile-400.otf);
@@ -8,7 +9,6 @@
     font-family: 'snowLink';
     src: url(../fonts/f24q3231-snow-freeze/otf/f24q3231-snow-freeze-snow-freeze-regular-400.otf);
 }
-
 @font-face {
     font-family: 'interview';
     src: url(../fonts/f24q3231-snow-freeze/ttf/Itim-Regular.ttf);
@@ -18,12 +18,12 @@ body{
     margin: 0;
     padding: 0; 
 }
-
 header img{
     width: 100%; 
     height: 100vh;
 }
 
+/* param navbar  */
 nav{
     top: -100px;
     transition: top 1s ease, background-color 1s ease; /* Animation pour le déplacement et la couleur de fond */
@@ -33,7 +33,6 @@ nav{
     z-index: 1;
     background-color: #00000089;
 }
-
 .titre{
     position: absolute;
     top: 34%;
@@ -42,14 +41,12 @@ nav{
     font-size: 130px;
     color: snow;
 }
-
 .navbar.visible{
     top: 0;
     justify-content: space-evenly;
     position: fixed;
     
 }
-
 .list_puce_nav{
     margin: 0;
     padding: 0;
@@ -59,29 +56,23 @@ nav{
     width: 2000px;
     transition: color 0.5s ease; /* Transition pour le changement de couleur */
 }
-
 .Ex{
     flex-grow: 0.74;
     height: 50px;
 }
-
 .search{
     width: 300px;
 }
-
 .list_puce_nav>li{
     margin: 0;
     padding: 0;
 }
-
 .txt{
     flex-grow: 0.05;
 }
-
 .logo>a{
     margin-left: 10%;
 }
-
 .list_puce_nav>li>a{
     text-decoration: none;
     color: snow;
@@ -93,63 +84,49 @@ nav{
 .lien:hover{
     border-bottom: 2px solid #ffffff;
 }
-
 .flexible{
     display: flex;
     letter-spacing: 5px;
 
 }
-
 .flexible>i{
     color: snow;
     font-size: 20px;
     
 }
-
 .list_puce_nav>li>a::after{
     border: 1px solid black;
 }
-
 .lien {
     position: relative;
     display: inline-block;
     color: white;
 }
-
 .txt>.lien{
     font-size: 140%;
 }
-
 .lien:hover{
     border-bottom: 2px solid #ffffff;
     transition: width 0.4s ease, left 0.4s ease;
 }
 
+/* contenu section --------------------------------- */
 
-
-
-
-/* contenu section  */
-
+/* param section  */
 section{
     display: flex;
     justify-content: center;
 }
-
 .section{
-    /* height: 1500px; */
+
     background-color: rgba(80, 80, 80, 0.264);
     width: 95%;
-
     margin: 3em;
-    
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     align-items: center;
 
 }
-
 .jerom{
     height: 500px;
     width: 90%;
@@ -160,87 +137,63 @@ section{
     color: white;
     text-align: center;
 }
-
 .textJ{
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 73%;
-    /* height: 250px; */
     border-radius: 30px;
     
 }
-
 .textJ>h2{
     text-decoration: underline;
 
 }
-
 .textJ>img{
     width: 70%;
 }
-
 .textJ>p{
     width: 70%;
     font-size: 18px;
 }
-
 .textJ2{
     display: flex;
     flex-direction: row;
     align-items: center;
     height: 500px;
 }
-
 .textJ2>p{
     height: 100px;
     width: 30%;
     margin-bottom: 10%;
 }
-
-.repCarte{
-    width: 50%;
-    font-size: 17px;
-    text-align: left;
-}
-
 .different{
     display: flex;
     justify-content: center;
     background-image: none;
 
 }
-
 .photoJerome{
     width: 30%;
     border-radius: 40px;
     border: 5px solid black;
     
 }
-
 .photoColab{
     width: 50%;
     margin-left: 5em;
     border-radius: 40px;
     border: 5px solid black;
 }
-
-
-
-/* ----------------------------------- */
-
 input, label{
     left: 30%;
     top: 42%;
     position: absolute;
 }
-
-
 .textJ>p{
     font-size: 22px;
     font-family: interview,sans-serif;
 }
-
 .textJ2{
     display: flex;
     justify-content: center;
@@ -248,8 +201,6 @@ input, label{
     perspective: 1000px; /* Ajoute de la profondeur pour le retournement */
     font-family: interview, sans-serif;
 }
-
-
 .container {
     perspective: 1000px; /* Ajoute de la profondeur pour le retournement */
     /* margin: auto; */
@@ -269,19 +220,17 @@ input[type="checkbox"] {
     transition: transform 0.6s;
     transform-style: preserve-3d; /* Préserve la 3D des enfants */
 }
-
 .button:hover{
     background-color: #2980b9; /* Couleur du bouton au survol */
     transform: scale(1.05); /* Légère augmentation de taille au survol */
 }
-
 input[type="checkbox"]:checked + .button {
     transform: rotateY(180deg); /* Retourne le bouton */
     
 
 }
 .front {
-    background-color: #007BFF; /* Couleur de la face avant */
+    background-color: #007BFF;
     width: 220%;
     padding:5%;
     position: absolute;
@@ -292,29 +241,22 @@ input[type="checkbox"]:checked + .button {
     line-height: 40px;
     font-size: 25px;
 }
-
 .colone{
 display: flex;
 flex-direction: column;
 
 }
-
 .colone>p{
     font-size: 25px;
     text-align: left;
     margin: -40px;
 }
-
 .deuxPoint{
     text-align: left;
 }
-
 .deuxPoint strong{
     color: #000000ac;
 }
-
-
-
 .back{
     background-color: rgb(76, 76, 76); 
     transform: rotateY(180deg); /* Retourne la face arrière */
@@ -333,49 +275,39 @@ flex-direction: column;
     padding: 10%;
     font-size: 25px;
 }
-
 .back p{
     padding: 5%;
     width: 100%;
 }
-
 .borderMiddle{
     border-left: 1px solid rgba(0, 0, 0, 0.379);
     border-right: 1px solid rgba(0, 0, 0, 0.379);
 }
-
 .parcours>p{
     font-size: 25px;
 }
-
 .petitTxt{
-
     font-size: 21px;
 }
-
 .puce{
     display: flex;
 
 }
-
 .puceNoir{
     
     margin: 5%;
     font-size: 30px;
     color: snow;
 }
-
 ol>p{
     color: #000000ac;
     text-decoration: underline;
 }
-
 .puce>:nth-child(1){
     border-right: 1px solid rgba(0, 0, 0, 0.379); 
     padding: 2%; 
     padding-right: 10%;
 }
-
 .puce li{
 
     text-align: left;
@@ -383,9 +315,7 @@ ol>p{
     text-decoration: none;
 }
 
-/* --------------------------------------- */
-
-/* pied de page  */
+/* pied de page --------------------------------------- */
 footer{
     background-color: #000000;
     height: 200px;
@@ -393,7 +323,6 @@ footer{
     border-top: 1px solid snow;
     color: snow;
 }
-
 .pied{
 
     display: flex;
@@ -403,7 +332,6 @@ footer{
 }
 
 /* premier bloc footer  */
-
 .blocG{
     padding-right: 1%;
     border-right: 1px solid snow;
@@ -412,23 +340,19 @@ footer{
     justify-content: space-evenly;
     width: 33.3%;
 }
-
 .blocG i{
     align-self: flex-end;
 }
-
 .ico{
     display: flex;
     align-self: flex-end;
     margin-right: 3%;
 }
-
 .ico>i{
     margin-bottom: 13%;
 }
 
 /* Deuxieme bloc footer  */
-
 .blocMid{
     /* border: 1px solid green; */
     display: flex;
@@ -446,7 +370,6 @@ footer{
     width: 100%;
     height: 70%;
 }
-
 .listPuceFooter>li{
     list-style-type: none;
     margin-left: -8%;
@@ -457,15 +380,12 @@ footer{
     margin-top: 50%;
 
 }
-
 .listPuceFooter>li>a:hover{
     background-color: #211d1d;
     font-size: 120%;
-
 }
 
 /* dernier bloc footer  */
-
 .blocD{
     border-left: 1px solid snow;
     width: 33.3%;
@@ -474,23 +394,19 @@ footer{
     align-items: center;
     justify-content: space-around;
 }
-
 .icoReseau{
     display: flex;
     flex-direction: row;
     margin-right: 20%;
 }
-
 .icoReseau i{
     font-size: 40px;
     width: 100%;
 }
-
 .icoReseau>a{
     margin:10%;
     color: snow;
 }
-
 .cordonner{
     display: flex;
     justify-content: space-evenly;

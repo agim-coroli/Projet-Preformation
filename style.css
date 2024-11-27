@@ -1,3 +1,4 @@
+/* police decriture  */
 @font-face{
     font-family: 'snowPolice';
     src: url(fonts/f24q3231-snow-freeze/otf/f24q3231-snow-freeze-snow-freeze-regular-snow-pile-400.otf);
@@ -16,26 +17,28 @@ body{
 }
 header {background-color: black;}
 
+/* header ------------------------------------------------------------------------------------------ */
+
 video {
     top: 0;
     left: 0;
-    width: 100%;   /* Prend toute la largeur de la fenêtre */
-    height: 100vh;  /* Prend toute la hauteur de la fenêtre */
+    width: 100%; 
+    height: 100vh;
     object-fit: cover; /* Remplir l'espace sans déformation */
-    z-index: -1;    /* Place la vidéo derrière tout autre contenu */
+    z-index: -1; 
     opacity: 50%;
 }
 
+/* param navbar  */
 nav{
     top: -100px;
     transition: top 1s ease, background-color 1s ease; /* Animation pour le déplacement et la couleur de fond */
     left: 0;
     right: 0;
-    z-index: 1; /* Assurez-vous que la navbar est au-dessus du contenu */
+    z-index: 1; 
     background-color: #7b7b7b00;
 
 }
-
 .navbar.visible{
     top: 0;
     justify-content: space-evenly;
@@ -43,6 +46,7 @@ nav{
 
 }
 
+/* param liste a puce  */
 .list_puce_nav{
     margin: 0;
     padding: 0;
@@ -50,38 +54,13 @@ nav{
     align-items: center;
     height: 40px;
     width: 2000px;
-    /* border: 1px solid green; */
     transition: color 0.5s ease; /* Transition pour le changement de couleur */
     
 }
-
-.Ex{
-    flex-grow: 0.74;
-    height: 50px;
-}
-
-.search{
-    width: 300px;
-}
-
 .list_puce_nav>li{
     margin: 0;
     padding: 0;
-    /* border: 1px solid red; */
 }
-
-.txt{
-    flex-grow: 0.05;
-}
-
-.txt>.lien{
-    font-size: 140%;
-}
-
-.logo>a{
-    margin-left: 10%;
-}
-
 .list_puce_nav>li>a{
     text-decoration: none;
     color: snow;
@@ -90,32 +69,48 @@ nav{
     font-family:snowLink, sans-serif ;
     letter-spacing: 2px;
 }
+.list_puce_nav>li>a::after{
+    border: 1px solid black;
+}
 .lien:hover{
     border-bottom: 2px solid #ffffff;
 }
+.txt{
+    flex-grow: 0.05;
+}
+.txt>.lien{
+    font-size: 140%;
+}
+.logo>a{
+    margin-left: 10%;
+}
 
+/* espace vide pour mettre la loupe a 100% */
+.Ex{
+    flex-grow: 0.74;
+    height: 50px;
+}
+
+/* param loupe  */
 .flexible{
     display: flex;
     letter-spacing: 5px;
-
 }
-
 .flexible>label>i{
     color: snow;
     font-size: 20px;
     
 }
-
-.list_puce_nav>li>a::after{
-    border: 1px solid black;
+.search{
+    width: 300px;
 }
+
+/* Section ------------------------------------------------------------------------------------------ */
 
 section{
     display: flex;
     justify-content: space-evenly;
 }
-
-
 
 /* bloc des animation de text proj prefo */
 .blocTitre{
@@ -256,7 +251,7 @@ section{
     border-radius: 8px;
     box-shadow: 
     0 4px 6px #211d1d;
-    opacity: 0;  /* Rendre les cartes invisibles au départ */
+    opacity: 0; 
     transform: translateY(100px);  /* Déplace les cartes du bas */
     transition: all 1.5s ease-out;  /* Transition fluide pour l'apparition */
     display: flex;
@@ -299,7 +294,7 @@ section{
     animation-delay: 0.1s;
 }
 
-/* pied de page  */
+/* pied de page ------------------------------------------------------- */
 footer{
     background-color: black;
     height: 200px;
@@ -307,17 +302,13 @@ footer{
     border-top: 1px solid snow;
     color: snow;
 }
-
 .pied{
-    /* border: 1px solid rgb(255, 0, 238); */
     display: flex;
     justify-content: space-between;
     padding: 1%;
-    /* max-height: 10px; a definir plutard */
 }
 
 /* premier bloc footer  */
-
 .blocG{
     padding-right: 1%;
     border-right: 1px solid snow;
@@ -326,33 +317,26 @@ footer{
     justify-content: space-evenly;
     width: 33.3%;
 }
-
 .blocG i{
     align-self: flex-end;
 }
-
 .ico{
     display: flex;
     align-self: flex-end;
     margin-right: 3%;
 }
-
 .ico>i{
     margin-bottom: 13%;
 }
 
 /* Deuxieme bloc footer  */
-
 .blocMid{
-    /* border: 1px solid green; */
     display: flex;
     justify-content:space-evenly;
     align-items: center;
     width: 33.3%;
 }
 .listPuceFooter{
-
-    /* border: 1px solid rgb(0, 38, 255); */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -360,7 +344,6 @@ footer{
     width: 100%;
     height: 70%;
 }
-
 .listPuceFooter>li{
     list-style-type: none;
     margin-left: -8%;
@@ -371,7 +354,6 @@ footer{
     margin-top: 50%;
 
 }
-
 .listPuceFooter>li>a:hover{
     background-color: #211d1d;
     font-size: 120%;
@@ -379,7 +361,6 @@ footer{
 }
 
 /* dernier bloc footer  */
-
 .blocD{
     border-left: 1px solid snow;
     width: 33.3%;
@@ -388,22 +369,18 @@ footer{
     align-items: center;
     justify-content: space-around;
 }
-
 .icoReseau{
     display: flex;
     flex-direction: row;
     margin-right: 20%;
 }
-
 .icoReseau i{
     font-size: 40px;
     width: 100%;
 }
-
 .icoReseau>a{
     margin:10%;
 }
-
 .cordonner{
     display: flex;
     justify-content: space-evenly;
