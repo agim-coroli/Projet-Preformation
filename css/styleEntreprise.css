@@ -214,14 +214,14 @@ input[type="checkbox"] {
     width: 250px;
     height: 50px;
     cursor: pointer;
-    background-color: #007BFF;
+    /* background-color: #007BFF; */
     color: white;
     border-radius: 5px;
     transition: transform 0.6s;
     transform-style: preserve-3d; /* Préserve la 3D des enfants */
 }
+
 .button:hover{
-    background-color: #2980b9; /* Couleur du bouton au survol */
     transform: scale(1.05); /* Légère augmentation de taille au survol */
 }
 input[type="checkbox"]:checked + .button {
@@ -230,7 +230,8 @@ input[type="checkbox"]:checked + .button {
 
 }
 .front {
-    background-color: #007BFF;
+    background: linear-gradient(45deg, #0800ff, #ff0606);
+    animation: gradient-animation 5s ease infinite, blink-animation 1s steps(5, start) infinite;
     width: 220%;
     padding:5%;
     position: absolute;
@@ -240,6 +241,26 @@ input[type="checkbox"]:checked + .button {
     border-radius: 5px;
     line-height: 40px;
     font-size: 25px;
+}
+
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%; /* Position de départ */
+    }
+    50% {
+        background-position: 100% 50%; /* Position intermédiaire */
+    }
+    100% {
+        background-position: 0% 50%; /* Retour à la position de départ */
+    }
+}
+@keyframes blink-animation {
+    0%, 100% {
+        opacity: 1; /* Plein opacité au début et à la fin */
+    }
+    50% {
+        opacity: 80%; /* Transparence à mi-chemin */
+    }
 }
 .colone{
 display: flex;

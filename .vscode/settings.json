@@ -9,5 +9,6 @@
       "h1_font_size": "40px",  // Change la taille de la police des h1
       "p_font_size": "20px",   // Change la taille de la police des p
       "a_text_decoration": "none"  // Retire la décoration des liens
-    }
+    },
+    "liveServer.settings.port": 5501
   }

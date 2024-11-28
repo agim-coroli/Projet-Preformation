@@ -153,7 +153,10 @@ input{
     position: absolute;
     top: 3%;
     z-index: 10;
-    background-color: #3498db; 
+
+    background: linear-gradient(45deg, #3498db, #ff0000);
+    animation: gradient-animation 5s ease infinite, blink-animation 1s steps(5, start) infinite;
+
     color: white;
     border: none;
     border-radius: 5px;
@@ -162,6 +165,28 @@ input{
     padding: 10px 20px;
     margin: 20px 0;
 }
+
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%; /* Position de départ */
+    }
+    50% {
+        background-position: 100% 50%; /* Position intermédiaire */
+    }
+    100% {
+        background-position: 0% 50%; /* Retour à la position de départ */
+    }
+}
+
+@keyframes blink-animation {
+    0%, 100% {
+        opacity: 1; /* Plein opacité au début et à la fin */
+    }
+    50% {
+        opacity: 80%; /* Transparence à mi-chemin */
+    }
+}
+
 .button:hover {
     background-color: #2980b9;
     transform: scale(1.05); /* Légère augmentation de taille au survol */
