@@ -364,6 +364,13 @@ section {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+.espace{
+    position: absolute;
+    top: -4%;
+    left: 54%;
+    width: 450px;
+}
+
 /* paragraphe deuxieme enfant cartes  */
 #cartesEnfant2>:last-child {
     margin-top: 13%;

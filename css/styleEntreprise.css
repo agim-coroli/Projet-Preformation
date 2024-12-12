@@ -143,10 +143,10 @@ section{
     align-items: center;
     width: 73%;
     border-radius: 30px;
-    
 }
+
 .textJ>h2{
-    text-decoration: underline;
+    font-family: interview;
 
 }
 .textJ>img{
@@ -226,21 +226,20 @@ input[type="checkbox"] {
 }
 input[type="checkbox"]:checked + .button {
     transform: rotateY(180deg); /* Retourne le bouton */
-    
-
 }
 .front {
-    background: linear-gradient(45deg, #0800ff, #ff0606);
+    background: linear-gradient(346deg, #8a8a8a, #373737);
     animation: gradient-animation 5s ease infinite, blink-animation 1s steps(5, start) infinite;
     width: 220%;
     padding:5%;
     position: absolute;
     left: -20px;
     top:-50%;
-    backface-visibility: hidden; /* Cache le verso lorsqu'il est retourné */
+    backface-visibility: hidden;
     border-radius: 5px;
     line-height: 40px;
     font-size: 25px;
+    -webkit-animation: gradient-animation 5s ease infinite, blink-animation 1s steps(5, start) infinite;
 }
 
 @keyframes gradient-animation {
@@ -265,16 +264,22 @@ input[type="checkbox"]:checked + .button {
 .colone{
 display: flex;
 flex-direction: column;
-
 }
 .colone>p{
     font-size: 25px;
     text-align: left;
     margin: -40px;
+    
+}
+
+.textcentre{
+    text-align: center;
 }
 .deuxPoint{
     text-align: left;
+
 }
+
 .deuxPoint strong{
     color: #000000ac;
 }
@@ -298,6 +303,9 @@ flex-direction: column;
 }
 .back p{
     padding: 5%;
+    /* width: 100%; */
+}
+.largeur{
     width: 100%;
 }
 .borderMiddle{
@@ -314,6 +322,7 @@ flex-direction: column;
     display: flex;
 
 }
+
 .puceNoir{
     
     margin: 5%;

@@ -154,7 +154,7 @@ input{
     top: 3%;
     z-index: 10;
 
-    background: linear-gradient(45deg, #3498db, #ff0000);
+    background: linear-gradient(45deg, #3498db, #2436fbb8);
     animation: gradient-animation 5s ease infinite, blink-animation 1s steps(5, start) infinite;
 
     color: white;
@@ -206,7 +206,7 @@ input{
     border: 1px solid #ccc;
     border-radius: 30px;
     transform: rotateY(180deg); /* Met le verso à l'envers */
-    box-shadow: 0 0 1em rgb(255, 255, 255);
+    box-shadow: 0 0 2px rgb(255, 255, 255);
     display: flex;
     justify-content: center;
     align-items: center;
