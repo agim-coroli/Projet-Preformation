@@ -137,6 +137,7 @@ section{
     color: white;
     text-align: center;
 }
+
 .textJ{
     display: flex;
     flex-direction: column;
@@ -176,14 +177,14 @@ section{
 .photoJerome{
     width: 30%;
     border-radius: 40px;
-    border: 5px solid black;
+    border: 3px solid black;
     
 }
 .photoColab{
     width: 50%;
-    margin-left: 5em;
+    margin-left: 1em;
     border-radius: 40px;
-    border: 5px solid black;
+    border: 3px solid black;
 }
 input, label{
     left: 30%;
@@ -228,7 +229,7 @@ input[type="checkbox"]:checked + .button {
     transform: rotateY(180deg); /* Retourne le bouton */
 }
 .front {
-    background: linear-gradient(346deg, #8a8a8a, #373737);
+    background: linear-gradient(45deg, #3498db, #2436fbb8);
     animation: gradient-animation 5s ease infinite, blink-animation 1s steps(5, start) infinite;
     width: 220%;
     padding:5%;
@@ -332,6 +333,7 @@ flex-direction: column;
 ol>p{
     color: #000000ac;
     text-decoration: underline;
+    color: #3498db;
 }
 .puce>:nth-child(1){
     border-right: 1px solid rgba(0, 0, 0, 0.379); 

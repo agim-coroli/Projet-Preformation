@@ -165,7 +165,9 @@ input{
     padding: 10px 20px;
     margin: 20px 0;
 }
-
+.blue{
+    
+}
 @keyframes gradient-animation {
     0% {
         background-position: 0% 50%; /* Position de départ */
