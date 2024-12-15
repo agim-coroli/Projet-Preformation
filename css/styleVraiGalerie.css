@@ -1,0 +1,818 @@
+body {
+    background-color: rgba(0, 0, 0, 0.651);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    align-items: flex-start;
+    overflow: visible;
+}
+
+.envelope {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30vw;
+    height: 30vh;
+    background-color: #cd902f;
+    position: relative;
+    border: 2px solid black;
+    margin: 17vw 3vw;
+
+}
+
+.album {
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+}
+
+.photo {
+    position: absolute;
+    width: 10vw;
+    height: 30vh;
+    z-index: 2;
+    opacity: 0;
+}
+
+.container-cadres {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2%;
+    justify-content: center;
+    width: 90%;
+    align-items: center;
+}
+
+.cadre {
+    width: 10vw;
+    height: 30vh;
+    background-color: gray;
+    border: 2px solid black;
+    margin: 0.5vh;
+    position: relative;
+    z-index: 1;
+}
+.fin{
+    width: 10vw;
+    height: 29.8vh;
+}
+
+.photo1 {
+    animation: animPhoto1 2s forwards;
+    animation-delay: 3.5s;
+}
+
+.photo2 {
+    animation: animPhoto2 2s forwards;
+    animation-delay: 3s;
+
+}
+
+.photo3 {
+    animation: animPhoto3 2s forwards;
+    animation-delay: 2.5s;
+
+}
+
+.photo4 {
+    animation: animPhoto4 2s forwards;
+    animation-delay: 2s;
+}
+
+.photo5 {
+    animation: animPhoto5 2s forwards;
+    animation-delay: 1.5s;
+
+}
+
+.photo6 {
+    animation: animPhoto6 2s forwards;
+    animation-delay: 1s;
+
+}
+
+@keyframes animPhoto1 {
+    0% {
+        transform: translate(0, 0);
+        opacity: 0;
+    }
+
+    20% {
+        transform: translate(-22.8vw, 5vw) scale(0.5);
+        opacity: 0;
+    }
+
+    30% {
+        transform: translate(-22.8vw, 5vw) scale(0.5)translateY(-14vw);
+        border-radius: 50%;
+        opacity: 1;
+    }
+
+    50% {
+        transform: translate(-22.8vw, 5vw) scale(0.5)translateY(-14vw) translate(45.6vw -10vw) scale(2);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translate(-22.8vw, 5vw) scale(0.5)translateY(-14vw) translate(45.6vw -10vw) scale(2);
+        opacity: 1;
+    }
+}
+
+@keyframes animPhoto2 {
+    0% {
+        transform: translate(0, 0);
+        opacity: 0;
+    }
+
+    20% {
+        transform: translate(-33.8vw, 5vw) scale(0.5);
+        opacity: 0;
+    }
+
+    30% {
+        transform: translate(-33.8vw, 5vw) scale(0.5)translateY(-14vw);
+        border-radius: 50%;
+        opacity: 1;
+    }
+
+    50% {
+        transform: translate(-33.8vw, 5vw) scale(0.5)translateY(-14vw) translate(45.6vw -10vw) scale(2);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translate(-33.8vw, 5vw) scale(0.5)translateY(-14vw) translate(45.6vw -10vw) scale(2);
+        opacity: 1;
+    }
+}
+
+@keyframes animPhoto3 {
+    0% {
+        transform: translate(0, 0);
+        opacity: 0;
+    }
+
+    20% {
+        transform: translate(-44.8vw, 5vw) scale(0.5);
+        opacity: 0;
+    }
+
+    30% {
+        transform: translate(-44.8vw, 5vw) scale(0.5)translateY(-14vw);
+        border-radius: 50%;
+        opacity: 1;
+    }
+
+    50% {
+        transform: translate(-44.8vw, 5vw) scale(0.5)translateY(-14vw) translate(45.6vw -10vw) scale(2);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translate(-44.8vw, 5vw) scale(0.5)translateY(-14vw) translate(45.6vw -10vw) scale(2);
+        opacity: 1;
+    }
+}
+
+@keyframes animPhoto4 {
+    0% {
+        transform: translate(0, 0);
+        opacity: 0;
+    }
+
+    20% {
+        transform: translate(-55vw, 5vw) scale(0.5);
+        opacity: 0;
+    }
+
+    30% {
+        transform: translate(-55vw, 5vw) scale(0.5)translateY(-14vw);
+        border-radius: 50%;
+        opacity: 1;
+    }
+
+    50% {
+        transform: translate(-55vw, 5vw) scale(0.5)translateY(-14vw) translate(45.6vw -10vw) scale(2);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translate(-55vw, 5vw) scale(0.5)translateY(-14vw) translate(45.6vw -10vw) scale(2);
+        opacity: 1;
+    }
+}
+
+@keyframes animPhoto5 {
+    0% {
+        transform: translate(0, 0);
+        opacity: 0;
+    }
+
+    20% {
+        transform: translate(-66vw, 5vw) scale(0.5);
+        opacity: 0;
+    }
+
+    30% {
+        transform: translate(-66vw, 5vw) scale(0.5)translateY(-14vw);
+        border-radius: 50%;
+        opacity: 1;
+    }
+
+    50% {
+        transform: translate(-66vw, 5vw) scale(0.5)translateY(-14vw) translate(45.6vw -10vw) scale(2);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translate(-66vw, 5vw) scale(0.5)translateY(-14vw) translate(45.6vw -10vw) scale(2);
+        opacity: 1;
+    }
+}
+
+@keyframes animPhoto6 {
+    0% {
+        transform: translate(0, 0);
+        opacity: 0;
+    }
+
+    20% {
+        transform: translate(-76.2vw, 5vw) scale(0.5);
+        opacity: 0;
+    }
+
+    30% {
+        transform: translate(-76.2vw, 5vw) scale(0.5)translateY(-14vw);
+        border-radius: 50%;
+        opacity: 1;
+    }
+
+    50% {
+        transform: translate(-76.2vw, 5vw) scale(0.5)translateY(-14vw) translate(45.6vw -10vw) scale(2);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translate(-76.2vw, 5vw) scale(0.5)translateY(-14vw) translate(45.6vw -10vw) scale(2);
+        opacity: 1;
+    }
+}
+
+.photo7 {
+    animation: animPhoto7 2s forwards;
+    animation-delay: 6.5s;
+}
+
+.photo8 {
+    animation: animPhoto8 2s forwards;
+    animation-delay: 6s;
+}
+
+.photo9 {
+    animation: animPhoto9 2s forwards;
+    animation-delay: 5.5s;
+}
+
+.photo10 {
+    animation: animPhoto10 2s forwards;
+    animation-delay: 5s;
+}
+
+.photo11 {
+    animation: animPhoto11 2s forwards;
+    animation-delay: 4.5s;
+}
+
+.photo12 {
+    animation: animPhoto12 2s forwards;
+    animation-delay: 4s;
+}
+
+@keyframes animPhoto7 {
+    0% {
+        transform: translate(0, 0);
+        opacity: 0;
+    }
+
+    20% {
+        transform: translate(-22.8vw, -12vw) scale(0.5);
+        opacity: 0;
+    }
+
+    30% {
+        transform: translate(-22.8vw, -12vw) scale(0.5)translateY(-14vw) rotate(5000deg);
+        border-radius: 50%;
+        opacity: 1;
+    }
+
+    50% {
+        transform: translate(-22.8vw, -12vw) scale(0.5)translateY(-14vw) rotate(5000deg) translate(45.6vw -10vw);
+        border-radius: 50%;
+        opacity: 1;
+    }
+
+    100% {
+        transform: translate(-22.8vw, -12vw) scale(0.5)translateY(-14vw) rotate(5000deg) translate(45.6vw -10vw) scale(2);
+        opacity: 1;
+    }
+}
+
+@keyframes animPhoto8 {
+    0% {
+        transform: translate(0, 0);
+        opacity: 0;
+    }
+
+    20% {
+        transform: translate(-33.8vw, -12vw) scale(0.5);
+        opacity: 0;
+    }
+
+    30% {
+        transform: translate(-33.8vw, -12vw) scale(0.5)translateY(-14vw) rotate(5000deg);
+        border-radius: 50%;
+        opacity: 1;
+    }
+
+    50% {
+        transform: translate(-33.8vw, -12vw) scale(0.5)translateY(-14vw) rotate(5000deg) translate(45.6vw -10vw);
+        border-radius: 50%;
+        opacity: 1;
+    }
+
+    100% {
+        transform: translate(-33.8vw, -12vw) scale(0.5)translateY(-14vw) rotate(5000deg) translate(45.6vw -10vw) scale(2);
+        opacity: 1;
+    }
+}
+
+@keyframes animPhoto9 {
+    0% {
+        transform: translate(0, 0);
+        opacity: 0;
+    }
+
+    20% {
+        transform: translate(-44.8vw, -12vw) scale(0.5);
+        opacity: 0;
+    }
+
+    30% {
+        transform: translate(-44.8vw, -12vw) scale(0.5)translateY(-14vw) rotate(5000deg);
+        border-radius: 50%;
+        opacity: 1;
+    }
+
+    50% {
+        transform: translate(-44.8vw, -12vw) scale(0.5)translateY(-14vw) rotate(5000deg) translate(45.6vw -10vw);
+        border-radius: 50%;
+        opacity: 1;
+    }
+
+    100% {
+        transform: translate(-44.8vw, -12vw) scale(0.5)translateY(-14vw) rotate(5000deg) translate(45.6vw -10vw) scale(2);
+        opacity: 1;
+    }
+}
+
+@keyframes animPhoto10 {
+    0% {
+        transform: translate(0, 0);
+        opacity: 0;
+    }
+
+    20% {
+        transform: translate(-55vw, -12vw) scale(0.5);
+        opacity: 0;
+    }
+
+    30% {
+        transform: translate(-55vw, -12vw) scale(0.5)translateY(-14vw) rotate(5000deg);
+        border-radius: 50%;
+        opacity: 1;
+    }
+
+    50% {
+        transform: translate(-55vw, -12vw) scale(0.5)translateY(-14vw) rotate(5000deg) translate(45.6vw -10vw);
+        border-radius: 50%;
+        opacity: 1;
+    }
+
+    100% {
+        transform: translate(-55vw, -12vw) scale(0.5)translateY(-14vw) rotate(5000deg) translate(45.6vw -10vw) scale(2);
+        opacity: 1;
+    }
+}
+
+@keyframes animPhoto11 {
+    0% {
+        transform: translate(0, 0);
+        opacity: 0;
+    }
+
+    20% {
+        transform: translate(-66vw, -12vw) scale(0.5);
+        opacity: 0;
+    }
+
+    30% {
+        transform: translate(-66vw, -12vw) scale(0.5)translateY(-14vw) rotate(5000deg);
+        border-radius: 50%;
+        opacity: 1;
+    }
+
+    50% {
+        transform: translate(-66vw, -12vw) scale(0.5)translateY(-14vw) rotate(5000deg) translate(45.6vw -10vw);
+        border-radius: 50%;
+        opacity: 1;
+    }
+
+    100% {
+        transform: translate(-66vw, -12vw) scale(0.5)translateY(-14vw) rotate(5000deg) translate(45.6vw -10vw) scale(2);
+        opacity: 1;
+    }
+}
+
+@keyframes animPhoto12 {
+    0% {
+        transform: translate(0, 0);
+        opacity: 0;
+    }
+
+    20% {
+        transform: translate(-76.2vw, -12vw) scale(0.5);
+        opacity: 0;
+    }
+
+    30% {
+        transform: translate(-76.2vw, -12vw) scale(0.5)translateY(-14vw) rotate(5000deg);
+        border-radius: 50%;
+        opacity: 1;
+    }
+
+    50% {
+        transform: translate(-76.2vw, -12vw) scale(0.5)translateY(-14vw) rotate(5000deg) translate(45.6vw -10vw);
+        border-radius: 50%;
+        opacity: 1;
+    }
+
+    100% {
+        transform: translate(-76.2vw, -12vw) scale(0.5)translateY(-14vw) rotate(5000deg) translate(45.6vw -10vw) scale(2);
+        opacity: 1;
+    }
+}
+
+.photo13 {
+    animation: animPhoto13 2s forwards;
+    animation-delay: 13s;
+}
+
+.photo14 {
+    animation: animPhoto14 2s forwards;
+    animation-delay: 11.8s;
+}
+
+.photo15 {
+    animation: animPhoto15 2s forwards;
+    animation-delay: 10.6s;
+}
+
+.photo16 {
+    animation: animPhoto16 2s forwards;
+    animation-delay: 9.4s;
+}
+
+.photo17 {
+    animation: animPhoto17 2s forwards;
+    animation-delay: 8.2s;
+}
+
+.photo18 {
+    animation: animPhoto18 2s forwards;
+    animation-delay: 7s;
+}
+
+@keyframes animPhoto13 {
+    0% {
+        transform: translate(0, 0);
+        opacity: 0;
+    }
+
+    20% {
+        transform: translate(-22.8vw, -20vw) scale(0.5);
+        opacity: 0;
+    }
+
+    30% {
+        transform: translate(-22.8vw, -20vw) scale(0.5)translateY(-30vw) scale(1.5);
+        opacity: 1;
+        clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+    }
+
+    50% {
+        transform: translate(-22.8vw, -20vw) scale(0.5)translateY(-30vw) translateY(70vw) scale(1.5);
+        opacity: 1;
+        clip-path: polygon(40% 0%, 40% 20%, 100% 20%, 100% 80%, 40% 80%, 40% 100%, 0% 50%);
+    }
+
+    60% {
+        transform: translate(-22.8vw, -20vw) scale(0.5)translateY(-30vw) translateY(70vw) scale(1.5);
+        opacity: 1;
+        clip-path: polygon(0% 0%, 0% 100%, 25% 100%, 25% 25%, 75% 25%, 75% 75%, 25% 75%, 25% 100%, 100% 100%, 100% 0%);
+    }
+
+    70% {
+        transform: translate(-22.8vw, -20vw) scale(0.5)translateY(-30vw) translateY(70vw) scale(1.5);
+        opacity: 1;
+        clip-path: polygon(10% 25%, 35% 25%, 35% 0%, 65% 0%, 65% 25%, 90% 25%, 90% 50%, 65% 50%, 65% 100%, 35% 100%, 35% 50%, 10% 50%);
+    }
+
+    80% {
+        transform: translate(-22.8vw, -20vw) scale(0.5)translateY(-30vw) translateY(70vw) scale(1.5);
+        opacity: 1;
+        clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+    }
+
+    90% {
+        transform: translate(-22.8vw, -20vw) scale(0.5)translateY(-30vw) translateY(70vw) scale(1.5);
+        opacity: 1;
+        clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    }
+
+    100% {
+        transform: translate(-22.8vw, -20vw) scale(0.5)translateY(-30vw) translateY(70vw) translate(45.6vw -10vw) scale(2);
+        opacity: 1;
+    }
+}
+
+@keyframes animPhoto14 {
+    0% {
+        transform: translate(0, 0);
+        opacity: 0;
+    }
+
+    20% {
+        transform: translate(-33.8vw, -20vw) scale(0.5);
+        opacity: 0;
+    }
+
+    30% {
+        transform: translate(-33.8vw, -20vw) scale(0.5)translateY(-30vw) scale(1.5);
+        opacity: 1;
+        clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+    }
+
+    50% {
+        transform: translate(-33.8vw, -20vw) scale(0.5)translateY(-30vw) translateY(70vw) scale(1.5);
+        opacity: 1;
+        clip-path: polygon(40% 0%, 40% 20%, 100% 20%, 100% 80%, 40% 80%, 40% 100%, 0% 50%);
+    }
+
+    60% {
+        transform: translate(-33.8vw, -20vw) scale(0.5)translateY(-30vw) translateY(70vw) scale(1.5);
+        opacity: 1;
+        clip-path: polygon(0% 0%, 0% 100%, 25% 100%, 25% 25%, 75% 25%, 75% 75%, 25% 75%, 25% 100%, 100% 100%, 100% 0%);
+    }
+
+    70% {
+        transform: translate(-33.8vw, -20vw) scale(0.5)translateY(-30vw) translateY(70vw) scale(1.5);
+        opacity: 1;
+        clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+    }
+
+    80% {
+        transform: translate(-33.8vw, -20vw) scale(0.5)translateY(-30vw) translateY(70vw) scale(1.5);
+        opacity: 1;
+        clip-path: polygon(10% 25%, 35% 25%, 35% 0%, 65% 0%, 65% 25%, 90% 25%, 90% 50%, 65% 50%, 65% 100%, 35% 100%, 35% 50%, 10% 50%);
+    }
+
+    90% {
+        transform: translate(-33.8vw, -20vw) scale(0.5)translateY(-30vw) translateY(70vw) scale(1.5);
+        opacity: 1;
+        clip-path: polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%);
+    }
+
+    100% {
+        transform: translate(-33.8vw, -20vw) scale(0.5)translateY(-30vw) translateY(70vw) translate(45.6vw -10vw) scale(2);
+        opacity: 1;
+    }
+}
+
+@keyframes animPhoto15 {
+    0% {
+        transform: translate(0, 0);
+        opacity: 0;
+    }
+
+    20% {
+        transform: translate(-44.8vw, -20vw) scale(0.5);
+        opacity: 0;
+    }
+
+    30% {
+        transform: translate(-44.8vw, -20vw) scale(0.5)translateY(-30vw) scale(1.5);
+        opacity: 1;
+        clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+    }
+
+    50% {
+        transform: translate(-44.8vw, -20vw) scale(0.5)translateY(-30vw) translateY(70vw) scale(1.5);
+        opacity: 1;
+        clip-path: polygon(40% 0%, 40% 20%, 100% 20%, 100% 80%, 40% 80%, 40% 100%, 0% 50%);
+    }
+
+    60% {
+        transform: translate(-44.8vw, -20vw) scale(0.5)translateY(-30vw) translateY(70vw) scale(1.5);
+        opacity: 1;
+        clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+    }
+
+    70% {
+        transform: translate(-44.8vw, -20vw) scale(0.5)translateY(-30vw) translateY(70vw) scale(1.5);
+        opacity: 1;
+        clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+    }
+
+    80% {
+        transform: translate(-44.8vw, -20vw) scale(0.5)translateY(-30vw) translateY(70vw) scale(1.5);
+        opacity: 1;
+        clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+    }
+
+    90% {
+        transform: translate(-44.8vw, -20vw) scale(0.5)translateY(-30vw) translateY(70vw) scale(1.5);
+        opacity: 1;
+        clip-path: polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%);
+    }
+
+    100% {
+        transform: translate(-44.8vw, -20vw) scale(0.5)translateY(-30vw) translateY(70vw) translate(45.6vw -10vw) scale(2);
+        opacity: 1;
+    }
+}
+
+@keyframes animPhoto16 {
+    0% {
+        transform: translate(0, 0);
+        opacity: 0;
+    }
+
+    20% {
+        transform: translate(-55vw, -20vw) scale(0.5);
+        opacity: 0;
+    }
+
+    30% {
+        transform: translate(-55vw, -20vw) scale(0.5)translateY(-30vw) scale(1.5);
+        opacity: 1;
+        clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+    }
+
+    50% {
+        transform: translate(-55vw, -20vw) scale(0.5)translateY(-30vw) translateY(70vw) scale(1.5);
+        opacity: 1;
+        clip-path: polygon(40% 0%, 40% 20%, 100% 20%, 100% 80%, 40% 80%, 40% 100%, 0% 50%);
+    }
+
+    60% {
+        transform: translate(-55vw, -20vw) scale(0.5)translateY(-30vw) translateY(70vw) scale(1.5);
+        opacity: 1;
+        clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    }
+
+    70% {
+        transform: translate(-55vw, -20vw) scale(0.5)translateY(-30vw) translateY(70vw) scale(1.5);
+        opacity: 1;
+        clip-path: polygon(10% 25%, 35% 25%, 35% 0%, 65% 0%, 65% 25%, 90% 25%, 90% 50%, 65% 50%, 65% 100%, 35% 100%, 35% 50%, 10% 50%);
+    }
+
+    80% {
+        transform: translate(-55vw, -20vw) scale(0.5)translateY(-30vw) translateY(70vw) scale(1.5);
+        opacity: 1;
+        clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+    }
+
+    90% {
+        transform: translate(-55vw, -20vw) scale(0.5)translateY(-30vw) translateY(70vw) scale(1.5);
+        opacity: 1;
+        clip-path: polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%);
+    }
+
+    100% {
+        transform: translate(-55vw, -20vw) scale(0.5)translateY(-30vw) translateY(70vw) translate(45.6vw -10vw) scale(2);
+        opacity: 1;
+    }
+}
+
+@keyframes animPhoto17 {
+    0% {
+        transform: translate(0, 0);
+        opacity: 0;
+    }
+
+    20% {
+        transform: translate(-66vw, -20vw) scale(0.5);
+        opacity: 0;
+    }
+
+    30% {
+        transform: translate(-66vw, -20vw) scale(0.5)translateY(-30vw) scale(1.5);
+        opacity: 1;
+        clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+    }
+
+    50% {
+        transform: translate(-66vw, -20vw) scale(0.5)translateY(-30vw) translateY(70vw) scale(1.5);
+        opacity: 1;
+        clip-path: polygon(40% 0%, 40% 20%, 100% 20%, 100% 80%, 40% 80%, 40% 100%, 0% 50%);
+    }
+
+    60% {
+        transform: translate(-66vw, -20vw) scale(0.5)translateY(-30vw) translateY(70vw) scale(1.5);
+        opacity: 1;
+        clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    }
+
+    70% {
+        transform: translate(-66vw, -20vw) scale(0.5)translateY(-30vw) translateY(70vw) scale(1.5);
+        opacity: 1;
+        clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+    }
+
+    80% {
+        transform: translate(-66vw, -20vw) scale(0.5)translateY(-30vw) translateY(70vw) scale(1.5);
+        opacity: 1;
+        clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+    }
+
+    90% {
+        transform: translate(-66vw, -20vw) scale(0.5)translateY(-30vw) translateY(70vw) scale(1.5);
+        opacity: 1;
+        clip-path: polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%);
+    }
+
+    100% {
+        transform: translate(-66vw, -20vw) scale(0.5)translateY(-30vw) translateY(70vw) translate(45.6vw -10vw) scale(2);
+        opacity: 1;
+    }
+}
+
+@keyframes animPhoto18 {
+    0% {
+        transform: translate(0, 0);
+        opacity: 0;
+    }
+
+    20% {
+        transform: translate(-76.2vw, -20vw) scale(0.5);
+        opacity: 0;
+    }
+
+    30% {
+        transform: translate(-76.2vw, -20vw) scale(0.5)translateY(-30vw) scale(1.5);
+        opacity: 1;
+        clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+    }
+
+    50% {
+        transform: translate(-76.2vw, -20vw) scale(0.5)translateY(-30vw) translateY(70vw) scale(1.5);
+        opacity: 1;
+        clip-path: polygon(40% 0%, 40% 20%, 100% 20%, 100% 80%, 40% 80%, 40% 100%, 0% 50%);
+    }
+
+    60% {
+        transform: translate(-76.2vw, -20vw) scale(0.5)translateY(-30vw) translateY(70vw) scale(1.5);
+        opacity: 1;
+        clip-path: polygon(0% 0%, 0% 100%, 25% 100%, 25% 25%, 75% 25%, 75% 75%, 25% 75%, 25% 100%, 100% 100%, 100% 0%);
+    }
+
+    70% {
+        transform: translate(-76.2vw, -20vw) scale(0.5)translateY(-30vw) translateY(70vw) scale(1.5);
+        opacity: 1;
+        clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+    }
+
+    80% {
+        transform: translate(-76.2vw, -20vw) scale(0.5)translateY(-30vw) translateY(70vw) scale(1.5);
+        opacity: 1;
+        clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+    }
+
+    90% {
+        transform: translate(-76.2vw, -20vw) scale(0.5)translateY(-30vw) translateY(70vw) scale(1.5);
+        opacity: 1;
+        clip-path: polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%);
+    }
+
+    100% {
+        transform: translate(-76.2vw, -20vw) scale(0.5)translateY(-30vw) translateY(70vw) translate(45.6vw -10vw) scale(2);
+        opacity: 1;
+    }
+}

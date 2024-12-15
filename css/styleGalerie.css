@@ -1,3 +1,8 @@
+.bodyGalerie {
+    background-color: black;
+    overflow: hidden;
+}
+
 .A__main__album {
     display: flex;
     justify-content: center;
@@ -197,6 +202,7 @@
         transform: translateY(-200px) rotate(-90deg) scale(0.5) translateY(804px) translateX(-168px) translateX(2357px) scale(3.4);
     }
 }
+
 @keyframes ani9 {
     25% {
         border-radius: 50%;
@@ -212,6 +218,7 @@
         transform: translateY(-200px) rotate(-90deg) scale(0.5) translateY(804px) translateX(-175px) translateX(1860px) scale(3.4);
     }
 }
+
 @keyframes ani10 {
     25% {
         border-radius: 50%;
@@ -227,6 +234,7 @@
         transform: translateY(-200px) rotate(-90deg) scale(0.5) translateY(804px) translateX(-182px) translateX(1364px) scale(3.4);
     }
 }
+
 @keyframes ani11 {
     25% {
         border-radius: 50%;
@@ -242,6 +250,7 @@
         transform: translateY(-200px) rotate(-90deg) scale(0.5) translateY(804px) translateX(-190px) translateX(867px) scale(3.4);
     }
 }
+
 @keyframes ani12 {
     25% {
         border-radius: 50%;
@@ -293,13 +302,15 @@
         border-radius: 50%;
         transform: translateX(300px) rotate(-90deg);
     }
-    75%{
+
+    75% {
         transform: translateX(300px) rotate(-90deg) translateY(-1546px);
         opacity: 0;
         z-index: -3;
     }
+
     100% {
-        
+
         opacity: 1;
         transform: translateY(-1546px) translateX(722px) rotate(-90deg) scale(1.7);
     }
@@ -310,13 +321,15 @@
         border-radius: 50%;
         transform: translateX(300px) rotate(-90deg);
     }
-    75%{
+
+    75% {
         transform: translateX(300px) rotate(-90deg) translateY(-1546px);
         opacity: 0;
         z-index: -3;
     }
+
     100% {
-        
+
         opacity: 1;
         transform: translateY(-1294px) translateX(722px) rotate(-90deg) scale(1.7);
     }
@@ -327,13 +340,15 @@
         border-radius: 50%;
         transform: translateX(300px) rotate(-90deg);
     }
-    75%{
+
+    75% {
         transform: translateX(300px) rotate(-90deg) translateY(-1546px);
         opacity: 0;
         z-index: -3;
     }
+
     100% {
-        
+
         opacity: 1;
         transform: translateY(-1042px) translateX(722px) rotate(-90deg) scale(1.7);
     }
@@ -344,13 +359,15 @@
         border-radius: 50%;
         transform: translateX(300px) rotate(-90deg);
     }
-    75%{
+
+    75% {
         transform: translateX(300px) rotate(-90deg) translateY(-1546px);
         opacity: 0;
         z-index: -3;
     }
+
     100% {
-        
+
         opacity: 1;
         transform: translateY(-790px) translateX(722px) rotate(-90deg) scale(1.7);
     }
@@ -361,30 +378,34 @@
         border-radius: 50%;
         transform: translateX(300px) rotate(-90deg);
     }
-    75%{
+
+    75% {
         transform: translateX(300px) rotate(-90deg) translateY(-1546px);
         opacity: 0;
         z-index: -3;
     }
+
     100% {
-        
+
         opacity: 1;
         transform: translateY(-538px) translateX(722px) rotate(-90deg) scale(1.7);
     }
 }
 
 @keyframes ani18 {
-     50% {
+    50% {
         border-radius: 50%;
         transform: translateX(300px) rotate(-90deg);
     }
-    75%{
+
+    75% {
         transform: translateX(300px) rotate(-90deg) translateY(-1546px);
         opacity: 0;
         z-index: -3;
     }
+
     100% {
-        
+
         opacity: 1;
         transform: translateY(-286px) translateX(722px) rotate(-90deg) scale(1.7);
     }
@@ -418,7 +439,7 @@
     background: black;
 }
 
-.fleche{
+.fleche {
     position: absolute;
     left: 6%;
     top: 60%;
@@ -429,14 +450,50 @@
     padding: 1%;
 }
 
-.fleche:hover{
-    border: 1px solid black;
-    border-radius: 60%;
-    font-size: 70px;
-    color: rgb(0, 0, 0);
-    background-color: rgb(213, 149, 40);
+.fleche:hover {
+    color: rgb(213, 149, 40);
 }
 
-.bodyGalerie{
-    background-color: black;
+.intero {
+    position: absolute;
+    left: 6%;
+    top: 78%;
+    font-size: 70px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 0;
+    opacity: 0;
+    transform: scale(0);
+    animation: apparition ease-in-out 70s forwards;
+    animation-delay: 1s;
+}
+
+@keyframes apparition {
+    to {
+        opacity: 1;
+        transform: scale(2);
+    }
+}
+
+.intero:hover::after {
+    content: "⭐";
+    font-size: 16px;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: rota 0.15s linear infinite;
+    animation-delay: 0s;
+}
+
+@keyframes rota {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg) translate(60px) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg) translate(60px) rotate(-360deg);
+    }
 }
